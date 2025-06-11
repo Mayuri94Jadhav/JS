@@ -10,9 +10,20 @@
 //  let value=Number(marksss)
 // console.log(value);
 
-let marksss= undefined
- let value=Number(marksss)
+// let marksss= undefined
+//  let value=Number(marksss)
+// console.log(value);
+// console.log("2"+1); //21
+// console.log(2+1+"3"); //33
+// console.log("2"+1+3);//213
+
+
+let value=20
+++value;
 console.log(value);
+value++;
+console.log(value);
+
 
 
 
