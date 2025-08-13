@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async function</title>
+</head>
+<body>
+    <h1> hey Mayuri</h1>
+    <button id="stop"> Stop</button>
+</body>
+<script> 
+const saymayuri = function(){
+        console.log("Mayuri");
+}
+const changeText =function(){
+    document.querySelector('h1').innerHTML="let's learn JS"
+}
+
+const changeName = setTimeout( changeText,3000)
+    document.querySelector('#stop').addEventListener('click' ,function(){
+        clearTimeout(changeName)
+        console.log("STOPPPED");
+        
+    })
+</script>
+</html> 

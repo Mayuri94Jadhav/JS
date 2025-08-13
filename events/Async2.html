@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript</h1>
+    <button id="start"> start</button>
+    <button id="stop">Stop</button>
+    
+
+<script>
+    let intervalId ;
+       function printStart (){
+        console.log("heyyy");
+        
+       }
+
+    function startInterval (){
+        if(intervalId){
+            console.log("interval already running");
+            return;
+        }
+        intervalId=setInterval(printStart,1000);
+        console.log("interval started");
+    }
+    document.getElementById("start").addEventListener('click', startInterval);
+
+    // ....stop button....
+     document.getElementById("stop").addEventListener('click', stopInterval);
+     function stopInterval(){
+        if (intervalId){
+            clearInterval(intervalId);
+            intervalId=null;
+            console.log("interval stopped");
+        } else{
+            console.log("no interval running");
+            
+        }
+            
+    }
+ 
+</script>
+</body>
+</html>
