@@ -1,13 +1,13 @@
-var a=500          // globale scope
+var a=500          // globale 
 
-if (true){         // block scope
+if (true){         // block 
 //  a=10              //reassing the outer a 
     let a=10
     const b=20
     var c=30
-    // console.log("block scope:", a);
+    // console.log("block :", a);
 }
-// console.log("Globale scope: ", a);
+// console.log("Globale : ", a);
 
 
 // <<<<<<<<< NESTED FUNCTION >>>>>>>>>>>
@@ -34,10 +34,10 @@ if(true){
         console.log(username+website);
         
     }
-    // console.log(website);    // cause error,becoz it assign out of scope
+    // console.log(website);    // cause error,becoz it assign out of 
     
 }
-// console.log(username);     // cause error,becoz it assign out of scope
+// console.log(username);     // cause error,becoz it assign out of 
 
 
 

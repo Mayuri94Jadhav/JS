@@ -9,12 +9,16 @@
     <h1> JavaScript</h1>
     <button id="start"> start</button>
     <button id="stop">Stop</button>
+    <div id = "output"></div>
     
 
 <script>
     let intervalId ;
        function printStart (){
-        console.log("heyyy");
+        const output = document.getElementById("output");
+        const timestamp = new Date().toLocaleTimeString();
+        output.innerHTML += `called at ${timestamp}: heyyy <br>`;
+      
         
        }
 
@@ -29,6 +33,7 @@
     document.getElementById("start").addEventListener('click', startInterval);
 
     // ....stop button....
+    
      document.getElementById("stop").addEventListener('click', stopInterval);
      function stopInterval(){
         if (intervalId){
