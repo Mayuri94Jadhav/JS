@@ -50,7 +50,7 @@ user.welcomeMsg()
 
     // const addTwo =(num1,num2) => (num1+num2)   //..m2
     //  console.log(addTwo(4,6));
-    
+     
 
     //..... using Object ......
 
