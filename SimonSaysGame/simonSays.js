@@ -2,7 +2,6 @@ let gameSeq=[];
 let userSeq=[];
 
 let btns = ["yellow", "red", "purple","green"];  // to chosee random button  
-
 let started = false;
 let level = 0;
 let h2 = document.querySelector("h2");
@@ -12,7 +11,6 @@ document.addEventListener("keypress" , function (){
         console.log("game is started");
         started = true;
         levelUp();
-
     }
 }); 
 
@@ -56,7 +54,6 @@ function checkAns(idx){
         }, 150)
         reset();  // to restart the game
     }
-
 }
 function btnPress(){
     // console.log(this);
@@ -65,7 +62,6 @@ function btnPress(){
 
     userColor = btn.getAttribute("id");
     userSeq.push(userColor);
-
     checkAns(userSeq.length-1);  // call the fun. 
 }
 
@@ -80,7 +76,5 @@ function reset(){
     userSeq =[];
     level = 0;
 }
-   
-
-// ....... note .....
+   // ....... note .....
 // ech "btn" is function scope of which within it declare.
